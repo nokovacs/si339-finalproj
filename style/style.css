@@ -1,0 +1,75 @@
+header {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo h1 {
+    font-size: 28px;
+}
+  
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    margin: 0 10px;
+}
+  
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+nav a:hover {
+    color: #0077B5;
+}
+  
+nav .active {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+  
+.social-links a {
+    color: #0077B5;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+  
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+  
+.fab {
+    display: inline-block;
+}
+  
+.fab.fa-linkedin:hover {
+    color: #0077B5;
+}
+  
+.fab.fa-github:hover {
+    color: #24292E;
+}
+  
