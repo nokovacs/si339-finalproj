@@ -14,6 +14,7 @@ header {
   
 .logo h1 {
     font-size: 28px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
   
 nav ul {
@@ -32,6 +33,7 @@ nav a {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
   
 nav a:hover {
@@ -48,6 +50,7 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
   
 .social-links a {
@@ -72,4 +75,60 @@ footer {
 .fab.fa-github:hover {
     color: #24292E;
 }
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+.grid-item {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; 
+    position: relative;
+}
+  
+.grid-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.box {
+    flex-basis: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+  
+@media (min-width: 768px) {
+    .box {
+      flex-basis: calc(50% - 10px);
+    }
+}
+  
+@media (min-width: 1024px) {
+    .box {
+      flex-basis: calc(33.33% - 10px);
+    }
+}
+
+.jump-link {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+  
   
