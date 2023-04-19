@@ -5,35 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style/html5reset.css"> 
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
+    <a href="#body-content" class="jump-link">Jump to Content</a>
     <header>
-        <div class="logo">
-            <h1>Nathan Kovacs</h1>
-        </div>     
+        <img src="images/BONDLogo.png" alt="Bond Logo">   
         <nav>
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
+            <ul class="nav_links">
+              <li class = "pages"><a href="index.html" class="active">Home</a></li>
+              <li class = "pages"><a href="team.html">Our Team</a></li>
+              <li class = "pages"><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <a href="#content" class="jump-link">Jump to Content</a>
+    <section class="video-section">
+        <div class="video-wrapper">
+          <video autoplay loop muted>
+            <source src="images/sophisticated.mp4" type="video/mp4">
+          </video>
+          <div class="overlay"></div>
+          <div class="text-box">
+            <h1>BOND Consulting</h1>
+            <p id="typed-text"></p>
+
+            <script>
+                const text = "The Original Ross Consulting Club";
+                let index = 0;
+              
+                function type() {
+                  if (index < text.length) {
+                    document.getElementById("typed-text").innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100); // adjust the delay time as desired
+                  }
+                }
+              
+                setTimeout(type, 2000); // delay of 6 seconds before typing starts
+              
+            </script>
+          </div>
+        </div>
+      </section>      
+    <main id = "body-content">
         <div class="flex-container">
-            <div class="box">Hi! My name is Nathan Kovacs</div>
-            <div class="box">I'm currently in my second year at the University of Michigan College of Engineering</div>
-            <div class="box">I'm majoring in Computer Science and minoring in UX Design. I'm interested in SWE!</div>
+            <div class="box"><h1>WELCOME TO BOND...</h1></div>
+            <div class="box"><h2>BOND is the original consulting club at the University of Michigan. Over the past 18 years, 
+                we have worked with over 130 local businesses, startups, and non-profits all based in the Ann Arbor area to help 
+                them solve their toughest problems. Through a focus on both professional and personal development, our members 
+                have been able to form skillsets applicable to any industry, all while cultivating a family-like community.</h2></div>
         </div>     
     </main>
     <footer>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/nathan-kovacs-644438222/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/nokovacs" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/company/bondconsultinggroup/mycompany/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>&copy; 2023 Nathan Kovacs. All rights reserved.</p>
     </footer>
